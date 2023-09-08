@@ -1,0 +1,16 @@
+4. CODE ANSWER:
+
+using System;
+
+string pwd = "";
+do
+{
+    key = Console.ReadKey(true);
+    if (key.Key != ConsoleKey.Enter)
+    {
+        strPassword += key.KeyChar;
+        Console.Write("*");
+    }
+}
+while (key.Key != ConsoleKey.Enter);
+
